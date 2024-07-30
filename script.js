@@ -23,7 +23,7 @@ function percentage(num) {
 }
 
 let operator = null;
-let firstNum = null;
+let firstNum = 12427;
 let secondNum = null;
 
 function operate(operation, num1, num2) {
@@ -43,3 +43,14 @@ function operate(operation, num1, num2) {
             return divide(num1,num2);
     }
 }
+
+let outputBox = document.getElementById("outputBox");
+outputBox.textContent = firstNum;
+
+let clear = document.getElementById("clear");
+clear.addEventListener("click", () => {
+    operator = null;
+    firstNum = null;
+    secondNum = null;
+    outputBox.textContent = 0;
+})
