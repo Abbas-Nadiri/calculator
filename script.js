@@ -68,7 +68,7 @@ document.getElementById("clear").addEventListener("click", () => {
     operator = null;
     firstNum = null;
     secondNum = null;
-    output = "banger";
+    output = null;
     outputBox.textContent = 0;
 })
 
