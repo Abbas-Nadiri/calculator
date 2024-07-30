@@ -68,7 +68,7 @@ document.getElementById("clear").addEventListener("click", () => {
     operator = null;
     firstNum = null;
     secondNum = null;
-    output = null;
+    output = "banger";
     outputBox.textContent = 0;
 })
 
@@ -97,6 +97,7 @@ document.getElementById("backspace").addEventListener("click", () => {
     if (outputBox.textContent == "") {
         outputBox.textContent = 0;
     }
+
 })
 
 let decimal = document.getElementById("decimal");
@@ -146,6 +147,15 @@ equalsButton.addEventListener("click", () => {
     }
     output = operate(operator, firstNum, secondNum);
 
+    let list = document.querySelector("ul");
+
+    let listItem = document.createElement("li");
+    let span = document.createElement("span");
+
+    listItem.appendChild(span);
+    span.textContent = output;
+    list.appendChild(listItem);
+
     if (output.toString().length > 10) {
         outputBox.textContent = output.toString().substring(0,10)
     } else if (operator == "/" && secondNum == 0) {
@@ -154,4 +164,6 @@ equalsButton.addEventListener("click", () => {
         outputBox.textContent = output;
     }
     condition2 = true;
+    document.getElementById("clear").click();
 })
+

@@ -47,3 +47,13 @@ button {
 button:active {
     transform: translateY(1px);
 }
+
+#log {
+    margin-left: 100px;
+}
+
+ul {
+    list-style-type: none;
+    font-family: "Calculator";
+    font-size: 30px;
+}
