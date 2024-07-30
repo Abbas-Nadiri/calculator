@@ -33,7 +33,7 @@ button {
 .operator {
     background-color: orange;
 }
-.toprow {
+#clear {
     background-color: rgb(65, 71, 223);
 }
 
