@@ -164,6 +164,5 @@ equalsButton.addEventListener("click", () => {
         outputBox.textContent = output;
     }
     condition2 = true;
-    document.getElementById("clear").click();
 })
 
