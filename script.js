@@ -84,6 +84,10 @@ function updateDisplay(value) {
 
 document.querySelectorAll(".number").forEach(button => {
     button.addEventListener("click", () => {
+        if (condition2 == true) {
+            document.getElementById("clear").click();
+            condition2 = false;
+        };
         if (condition == true) {
             outputBox.textContent = ""
         }
