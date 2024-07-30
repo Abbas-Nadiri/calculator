@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>Document</title>
@@ -12,32 +15,32 @@
         <div id="outputBox"></div>
         <div class="row">
             <button id="clear">AC</button>
-            <button id="posneg" class="operator">+/-</button>
-            <button id="percentage" class="operator">%</button>
-            <button id="divide" class="operator">/</button>
+            <button class="manipulate" data-value="posNeg">+/-</button>
+            <button class="operator" data-value="^">^</button>
+            <button class="operator" data-value="/">/</button>
         </div>
         <div class="row">
             <button class="number" data-value="7">7</button>
             <button class="number" data-value="8">8</button>
             <button class="number" data-value="9">9</button>
-            <button id="multiply" class="operator">*</button>
+            <button class="operator" data-value="*">*</button>
         </div>
         <div class="row">
             <button class="number" data-value="4">4</button>
             <button class="number" data-value="5">5</button>
             <button class="number" data-value="6">6</button>
-            <button id="subtract" class="operator">-</button>
+            <button class="operator" data-value="-">-</button>
         </div>
         <div class="row">
             <button class="number" data-value="1">1</button>
             <button class="number" data-value="2">2</button>
             <button class="number" data-value="3">3</button>
-            <button id="add" class="operator">+</button>
+            <button class="operator" data-value="+">+</button>
         </div>
         <div class="row">
-            <button class="number" data-value="0">0</button>
-            <button id="decimal">.</button>
-            <button id="equals" class="operator">=</button>
+            <button id="zero" class="number" data-value="0">0</button>
+            <button id="decimal" data-value=".">.</button>
+            <button id="equals">=</button>
         </div>
     </div>
 </body>
