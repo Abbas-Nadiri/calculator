@@ -92,6 +92,13 @@ document.querySelectorAll(".number").forEach(button => {
     })
 })
 
+document.getElementById("backspace").addEventListener("click", () => {
+    outputBox.textContent = outputBox.textContent.slice(0,-1);
+    if (outputBox.textContent == "") {
+        outputBox.textContent = 0;
+    }
+})
+
 let decimal = document.getElementById("decimal");
 decimal.addEventListener("click", () => {
     if(!(outputBox.textContent.includes("."))) {
